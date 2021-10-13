@@ -1,10 +1,5 @@
 #include "card.hpp"
 
-Card::Card(std::string new_value, std::string new_suite) {
-    value = new_value;
-    suite = new_suite;
-}
-
 std::string Card::get_value() {
     return value;
 }
@@ -19,4 +14,9 @@ std::string Card::get_suite() {
 
 void Card::set_suite(std::string card_suite) {
     suite = card_suite;
+}
+
+Card::Card(std::string new_value, std::string new_suite) {
+    value = new_value;
+    suite = new_suite;
 }
